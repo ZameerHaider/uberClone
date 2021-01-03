@@ -13,6 +13,12 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("MainPage"),
+        centerTitle: true,
+      ),
+      body: Container(
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }
