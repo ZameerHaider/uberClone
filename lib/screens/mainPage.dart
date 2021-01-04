@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key key}) : super(key: key);
+  static const String id = 'mainPage';
 
   @override
   _MainPageState createState() => _MainPageState();
@@ -13,7 +14,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("MainPage"),
+        title: Text("Main Page"),
         centerTitle: true,
       ),
       body: Center(
