@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974485830529",
+    "firebase_url": "https://shahisawari-9dc64-default-rtdb.firebaseio.com",
+    "project_id": "shahisawari-9dc64",
+    "storage_bucket": "shahisawari-9dc64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974485830529:android:ae64ab4f7bd68fc59f4680",
+        "android_client_info": {
+          "package_name": "com.example.uberClone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974485830529-h3fvflgq385j9aqmnucjs67a5a71cmh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjhvNvkS1HY9A3388I9YjeUkkhyQtRbpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974485830529-h3fvflgq385j9aqmnucjs67a5a71cmh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

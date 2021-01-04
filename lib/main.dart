@@ -1,30 +1,41 @@
+import 'dart:io';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uberClone/screens/mainPage.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final FirebaseApp app = await Firebase.initializeApp(
+    name: 'db2',
+    options: Platform.isIOS || Platform.isMacOS
+        ? FirebaseOptions(
+            appId: '1:974485830529:ios:1555add3248b4cd49f4680',
+            apiKey: 'AIzaSyA9W6D6Tbyks1TmL_WrwPpgXQI9EFfT0Ik',
+            projectId: 'shahisawari-9dc64',
+            messagingSenderId: '974485830529',
+            databaseURL:
+                'https://shahisawari-9dc64-default-rtdb.firebaseio.com',
+          )
+        : FirebaseOptions(
+            appId: '1:974485830529:android:ae64ab4f7bd68fc59f4680',
+            apiKey: 'AIzaSyCjhvNvkS1HY9A3388I9YjeUkkhyQtRbpQ',
+            messagingSenderId: '974485830529',
+            projectId: 'shahisawari-9dc64',
+            databaseURL:
+                'https://shahisawari-9dc64-default-rtdb.firebaseio.com',
+          ),
+  );
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Uber Clone',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MainPage(),
